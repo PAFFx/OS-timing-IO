@@ -10,13 +10,13 @@ def IO_timer(epochs: int):
     print("execution time for ",epochs," I/Os : ",time_end-time_start," ms")
 
 def matrix_mul_timer(epochs: int):
-    a = np.ndarray(4);
-    a.reshape(2,2)
+    a = np.ndarray(8);
+    a.reshape(2,2,2)
     time_start = time.time()
     for _ in range(0,epochs):
         a.max()
     time_end = time.time()
-    print("execution time for finding ",epochs," 2x2 matrix max value : ",time_end-time_start," ms")
+    print("execution time for finding ",epochs," 2x2x2 numpy tensor max value : ",time_end-time_start," ms")
 
 
 if __name__ == "__main__":
